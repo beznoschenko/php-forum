@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^/project/webroot/
+RewriteRule .+ index.php
+php_value opcache.revalidate_freq 0
